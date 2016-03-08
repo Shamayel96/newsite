@@ -67,11 +67,23 @@ body {
 
 img {
   display: block;
-  position: static;
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  max-width: 30%;
+  padding-bottom: 1.25em;
+  }
+
+
+/*img.olives {
+  display: block;
+  position: relative;
+  top: 20px;
+  right: 100px;
   max-width: 100%;
   padding-bottom: 1.25em;
 }
-
+*/
 @media screen and (min-width: 33.333333333333336em) {
   figure {
     position: relative;
@@ -82,9 +94,9 @@ img {
    
     }
   figcaption {
-    position: relative;
-    width: 44.44444444444%;
-    top: 0;
-    left: 0;
+    position: fixed;
+    width: 20%;
+    top: 520px;
+    right: 10px;
   }
 }
