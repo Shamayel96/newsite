@@ -39,7 +39,6 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
 	content: none;
 }
 table {
@@ -53,24 +52,34 @@ table {
   http://www.modularscale.com/?18&px&1.25&web&text
 */
 
+h1 {
+  font-family: serif;
+  color: black;
+  font-size: 2em;
+  line-height: 1.25em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  padding-left: 1.25em;
+  padding-right: 0em; 
+  font-size-adjust: 100%;
+}
+
 body {
   font-family: serif;
+  background-color: #DEB887;
   color: #616161;
   font-size: 1.125em;
   line-height: 1.25em;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
-  padding-left: 1.125em; 
-  padding-right: 30em; 
-  text-size-adjust: 100%;
+  padding-left: 1.125em;
+  padding-right: 1.25em; 
+  font-size-adjust: 100%;
 }
 
 img {
   display: block;
-  position: fixed;
-  top: 100px;
-  right: 50px;
-  max-width: 30%;
+  max-width: 40%;
   padding-bottom: 1.25em;
   }
 
@@ -89,14 +98,16 @@ img {
     position: relative;
   }
   img {
-    margin-right: 0%;
-    width: 33.3333333333333%;
+    position: absolute;
+    margin-right: 10%;
+    width: 30%;
    
     }
   figcaption {
-    position: fixed;
-    width: 20%;
-    top: 520px;
-    right: 10px;
+    position: absolute;
+    width: 100%;
+    top: 410px;
+    left: 70px;
   }
+  
 }
